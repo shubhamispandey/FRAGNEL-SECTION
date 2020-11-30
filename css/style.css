@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+.primary-head {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-family: 'Open Sans', sans-serif; }
+
+.secondary-head {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Popins', sans-serif; }
+
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #4d4d4d;
+  padding: 10px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Popins', sans-serif;
+  border: 3px solid #fff;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: 1s; }
+  .button:hover {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700; }
+
+.btn-archieve {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
+
 html {
   margin: 0;
   padding: 0;
@@ -8,76 +44,77 @@ body {
   background: #e4faff;
   padding: 30px; }
 
-.mcontainer {
+.mcontainer-1 {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  .mcontainer .slider-activity {
+  .mcontainer-1 .slider-activity {
     width: 60%;
     position: relative;
     -webkit-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75); }
-    .mcontainer .slider-activity .carousel-item {
+    .mcontainer-1 .slider-activity .carousel-item {
       background: black;
+      position: relative;
       height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden; }
-    .mcontainer .slider-activity img {
-      opacity: 0.8;
+      .mcontainer-1 .slider-activity .carousel-item__descr {
+        position: absolute;
+        top: 45%;
+        left: 50px;
+        color: #fff; }
+    .mcontainer-1 .slider-activity img {
+      opacity: 0.6;
       flex-shrink: 0;
       min-width: 100%;
       min-height: 100%; }
-  .mcontainer .notice {
-    background: blue;
+  .mcontainer-1 .notice {
     width: 35%;
+    background: whitesmoke;
     -webkit-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
     position: relative;
     height: 400px; }
-    .mcontainer .notice-text {
+    .mcontainer-1 .notice-text {
       background: whitesmoke;
       width: 100%;
-      height: 100%; }
-      .mcontainer .notice-text ul {
+      height: 80%;
+      position: relative;
+      top: 6%; }
+      .mcontainer-1 .notice-text ul {
         list-style: none;
         color: #450fc2;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         padding: 35px; }
-        .mcontainer .notice-text ul li {
+        .mcontainer-1 .notice-text ul li {
           display: flex;
           align-items: flex-start;
           justify-content: space-around;
           vertical-align: top;
           font-size: 14px;
           height: 40px; }
-          .mcontainer .notice-text ul li i {
+          .mcontainer-1 .notice-text ul li i {
             margin-right: 5px;
             position: relative;
             top: 2px; }
-          .mcontainer .notice-text ul li:not(:last-child) {
+          .mcontainer-1 .notice-text ul li:not(:last-child) {
             margin-bottom: 20px; }
-          .mcontainer .notice-text ul li .button {
-            color: transparent;
-            background: linear-gradient(to right, red, yellow, blue, violet, green);
-            -webkit-background-clip: text;
-            background-clip: text;
-            font-weight: 500;
-            border-bottom: 1px ridge #450fc2; }
-    .mcontainer .notice::before {
+    .mcontainer-1 .notice::before {
       content: "NOTICE @ college";
       position: absolute;
       letter-spacing: 1px;
-      width: 50%;
-      height: 50px;
-      background: #2f0899;
+      width: 55%;
+      height: 60px;
+      background: #15014e;
       z-index: 2;
       top: -20px;
-      left: -12px;
+      left: -25px;
       color: #fff;
       font-family: 'Open Sans', sans-serif;
       font-size: 24px;
@@ -85,3 +122,25 @@ body {
       text-align: center;
       vertical-align: center;
       clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 10% 85%, 10% 100%, 0% 85%); }
+
+.m-container-2 {
+  margin-top: 50px;
+  width: 100%;
+  background: red;
+  display: flex;
+  justify-content: space-between; }
+  .m-container-2 .alumani {
+    width: 60%; }
+    .m-container-2 .alumani-1 {
+      flex: 1 0 45%; }
+    .m-container-2 .alumani-2 {
+      flex: 1 0 45%; }
+    .m-container-2 .alumani-3 {
+      flex: 1 0 45%; }
+    .m-container-2 .alumani-4 {
+      flex: 1 0 45%; }
+    .m-container-2 .alumani img {
+      width: 100%; }
+  .m-container-2 .social {
+    width: 35%;
+    background: blue; }
