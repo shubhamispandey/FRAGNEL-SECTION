@@ -49,6 +49,23 @@
      bottom: 10px;
      right: 10px;
  }
+ .header{
+     color:#28a745;
+     font-family: 'Open Sans','sans-serif';
+     font-size: 30px;
+     font-weight: 700;
+     text-align: center;
+     text-shadow: 1px 2px 4px rgba(126, 126, 126, 0.747);
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out;
+     display: inline-block;
+     margin-left: 35%;
+     margin-bottom: 20px;
+
+     &:hover{
+        transform: scale(1.1) skewX(15deg) skewY(2deg);
+     }
+ }
  
 
 
@@ -87,8 +104,9 @@ body {
 
             &__descr {
                 position: absolute;
-                top: 45%;
-                left: 50px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
                 color: #fff;
 
             }
@@ -172,36 +190,136 @@ body {
 
 //-------------------------------------------------------------------------------
 
-.m-container-2{
+.mcontainer-2{
     margin-top: 50px;
     width: 100%;
-    background: red;
     display: flex;
     justify-content: space-between;
 
-    .alumani{
+    .wrapper{
         width: 60%;
+    }
+    .alumani{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+
+        &__img {
+            height: 250px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+            img {
+                width: 100%;
+                min-height: 100%;
+                opacity: 0.7;
+                transform: scale(1.1);
+                transform-origin: 50% 20%;
+                transition: all 1s ease;
+            }
+        }
+
+        &__text{
+            padding: 15px;
+            color: rgb(255, 255, 255);
+            text-shadow: 1p 2px 2px #fff;
+            position: absolute;
+            top: 80%;
+            left: 0;
+            transition: all 1s ease;
+            h1{
+                font-size: 24px;
+                font-family: 'open sans','Sans serif';
+                font-weight: 700;
+
+            }
+            p{
+                font-size: 16px;
+                font-family: Popins,'Sans Serif';
+            }
+        }
 
         &-1{
-            flex: 1 0 45%;
+            flex-basis: 45%;
+            background: rgb(238, 238, 238);
+            margin-bottom: 30px;
+            @include box-shadow;
         }
         &-2 {
-            flex: 1 0 45%;
+            flex-basis: 45%;
+            background: rgb(238, 238, 238);
+            margin-bottom: 30px;
+            @include box-shadow;
         }
         &-3 {
-            flex: 1 0 45%;
+            flex-basis: 45%;
+            background: rgb(238, 238, 238);
+            margin-bottom: 30px;
+            @include box-shadow;
         }
         &-4 {
-            flex: 1 0 45%;
-        }
-        img{
-            width: 100%;
+            flex-basis: 45%;
+            background: rgb(238, 238, 238);
+            margin-bottom: 30px;
+            @include box-shadow;
         }
     }
 
     .social{
         width: 35%;
         background: blue;
+        height: 600px;
+        overflow: scroll;
+        position: relative;
+        @include box-shadow;
+
+        &::-webkit-scrollbar{
+            background: rgb(71, 69, 69);
+            width: 0;
+        }
+
+        &__top{
+            height: 50px;
+            background: rgb(71, 69, 69);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+
+            &-icon{
+                font-size: 30px;
+                color: #fff;
+                flex-basis: 15%;
+                margin-left: 20px;
+
+            }
+            &-text{
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+                flex-basis: 70%;
+            }
+        }
     }
 
+}
+
+
+/////////////////////////hover effects////////////////////////@at-root
+
+.alumani__img:hover .alumani__text{
+    top: 10%;
+    left: 0;
+}
+.alumani__img:hover img{
+    filter: blur(10px);
+    opacity: 0.4;
+    backface-visibility: hidden;
+    transform: scale(1.2);
 }
