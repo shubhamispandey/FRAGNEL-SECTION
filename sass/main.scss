@@ -4,6 +4,12 @@
     box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
 }
 
+@mixin box-shadow-1 {
+    -webkit-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.4);
+}
+
 
 //--------------------------------------------------------------------
 
@@ -167,10 +173,10 @@ body {
         }
 
         &::before {
-            content: "NOTICE @ college";
+            content: " NOTICE @ college ";
             position: absolute;
             letter-spacing: 1px;
-            width: 55%;
+            width: 60%;
             height: 60px;
             background: rgb(21, 1, 78);
             z-index: 2;
@@ -178,10 +184,11 @@ body {
             left: -25px;
             color: #fff;
             font-family: 'Open Sans', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
-            text-align: center;
-            vertical-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 10% 85%, 10% 100%, 0% 85%);
         }
     }
@@ -322,4 +329,185 @@ body {
     opacity: 0.4;
     backface-visibility: hidden;
     transform: scale(1.2);
+}
+
+
+/////////////////////////queries/////////////////////////////////////@at-root
+
+@media (max-width:1000px){
+    body{
+        padding: 30px 10px;
+    }
+    .mcontainer-1 {
+
+        .slider-activity {}
+
+            
+        .notice {
+            width: 38%;
+            
+
+            &-text {
+
+                ul {
+                    padding: 25px;
+
+                    li {
+
+
+                        &:not(:last-child) {
+                            margin-bottom: 25px;
+                        }
+
+
+                    }
+                }
+            }
+
+            &::before {font-size: 18px;
+            }
+        }
+
+    }
+    .mcontainer-2 {
+
+        .wrapper {
+            width: 60%;
+            padding: 0;
+        }
+
+        .alumani {
+            padding: 0;
+
+            &__img {
+
+                img {
+                }
+            }
+
+            &__text {
+
+                h1 {
+
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            &-1 {
+                flex-basis:  48%;
+                @include box-shadow-1;
+                
+            }
+
+            &-2 {
+                flex-basis: 48%;
+                @include box-shadow-1;
+                
+            }
+
+            &-3 {
+                flex-basis: 48%;
+                @include box-shadow-1;
+                
+            }
+
+            &-4 {
+                flex-basis: 48%;
+                @include box-shadow-1;
+                
+            }
+        }
+
+        .social {
+            width: 38%;
+
+            
+        }
+
+    }
+}
+
+@media (max-width:500px){
+    .mcontainer-1 {
+        width: 100%;
+        display: inline-block;
+
+        .slider-activity {
+            width: 100%;
+            margin-bottom: 30px;
+
+            .carousel-item {
+
+                &__descr {
+                    transform: translateX(-50%);
+                    color: #fff;
+                    left: 50%;
+                    bottom: 0;
+
+                }
+            }
+
+            img {
+                opacity: 0.6;
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%
+            }
+
+        }
+
+        .notice {
+            width: 90%;
+            margin: auto;
+            @include box-shadow;
+
+            height: 300px;
+        }
+
+    }
+
+    .mcontainer-2 {
+        margin-top: 50px;
+        width: 100%;
+        display: inline-block;
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .alumani{
+            &__text{
+                padding: 10px;
+                top: 85%;
+                left: 0;
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .social {
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+    }
+    .primary-head {
+        font-size: 36px;
+    }
+
+    .secondary-head {
+        font-size: 16px;
+    }
+    .alumani__img:hover .alumani__text {
+        top: 2%;
+        left: 0;
+    }
 }
