@@ -54,9 +54,10 @@
      position: absolute;
      bottom: 10px;
      right: 10px;
+
  }
  .header{
-     color:#28a745;
+     color:#ecbd00;
      font-family: 'Open Sans','sans-serif';
      font-size: 30px;
      font-weight: 700;
@@ -470,24 +471,30 @@ body {
     }
 
     .mcontainer-2 {
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
         display: inline-block;
 
         .wrapper {
             width: 100%;
+            .header{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                margin-bottom: 20px;
+            }
         }
 
         .alumani{
             &__text{
                 padding: 10px;
-                top: 85%;
+                top: 80%;
                 left: 0;
                 h1{
                     font-size: 18px;
                 }
                 p{
-                    font-size: 14px;
+                    display: none;
                 }
             }
         }
@@ -507,7 +514,14 @@ body {
         font-size: 16px;
     }
     .alumani__img:hover .alumani__text {
-        top: 2%;
+        top: 80%;
         left: 0;
+    }
+
+    .alumani__img:hover img {
+        filter: none;
+        opacity: 0.6;
+        backface-visibility: hidden;
+        transform: scale(1.1);
     }
 }
