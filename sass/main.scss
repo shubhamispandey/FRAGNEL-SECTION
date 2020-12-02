@@ -66,12 +66,9 @@
      text-transform: uppercase;
      transition: all 0.3s ease-in-out;
      display: inline-block;
-     margin-left: 35%;
      margin-bottom: 20px;
-
-     &:hover{
-        transform: scale(1.1) skewX(15deg) skewY(2deg);
-     }
+     background: #474545;
+     width: 100%;
  }
  
 
@@ -86,7 +83,7 @@ html {
 }
 
 body {
-    background: rgb(228, 250, 255);
+    background: rgb(255, 255, 255);
     padding: 30px;
 }
 
@@ -209,7 +206,7 @@ body {
     }
     .alumani{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
         align-content: space-evenly;
 
@@ -253,25 +250,25 @@ body {
         }
 
         &-1{
-            flex-basis: 45%;
+            flex-basis: 48%;
             background: rgb(238, 238, 238);
             margin-bottom: 30px;
             @include box-shadow;
         }
         &-2 {
-            flex-basis: 45%;
+            flex-basis: 48%;
             background: rgb(238, 238, 238);
             margin-bottom: 30px;
             @include box-shadow;
         }
         &-3 {
-            flex-basis: 45%;
+            flex-basis: 48%;
             background: rgb(238, 238, 238);
             margin-bottom: 30px;
             @include box-shadow;
         }
         &-4 {
-            flex-basis: 45%;
+            flex-basis: 48%;
             background: rgb(238, 238, 238);
             margin-bottom: 30px;
             @include box-shadow;
