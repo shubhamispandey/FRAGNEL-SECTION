@@ -275,7 +275,7 @@ body {
         }
     }
 
-    .alumani-slider{
+    .slider-activity{
         display: none;
     }
 
@@ -488,22 +488,42 @@ body {
 
         .alumani{
             display: none;
-            &__text{
-                padding: 10px;
-                top: 80%;
-                left: 0;
-                h1{
-                    font-size: 18px;
-                }
-                p{
-                    display: none;
-                }
-            }
         }
 
-        .alumani-slider {
+        .slider-activity {
             display: inline-block;
+            width: 100%;
+            position: relative;
+            @include box-shadow;
+
+            .carousel-item {
+                background: rgb(0, 0, 0);
+                position: relative;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                &__descr {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #fff;
+
+                }
+            }
+
+            img {
+                opacity: 0.6;
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%
+            }
+
         }
+
 
         .social {
             width: 90%;
