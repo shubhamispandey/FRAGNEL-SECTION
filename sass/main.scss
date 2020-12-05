@@ -57,7 +57,7 @@
 
  }
  .header{
-     color:#ecbd00;
+     color:#fff;
      font-family: 'Open Sans','sans-serif';
      font-size: 30px;
      font-weight: 700;
@@ -67,7 +67,7 @@
      transition: all 0.3s ease-in-out;
      display: inline-block;
      margin-bottom: 20px;
-     background: #474545;
+     background::#ecbd00;
      width: 100%;
  }
  
@@ -176,7 +176,7 @@ body {
             letter-spacing: 1px;
             width: 60%;
             height: 60px;
-            background: rgb(21, 1, 78);
+            background: #ecbd00;
             z-index: 2;
             top: -20px;
             left: -25px;
@@ -277,20 +277,20 @@ body {
 
     .social{
         width: 35%;
-        background: blue;
         height: 600px;
         overflow: scroll;
         position: relative;
         @include box-shadow;
 
         &::-webkit-scrollbar{
-            background: rgb(71, 69, 69);
+            background:  #ecbd00;
             width: 0;
+            height: 0;
         }
 
         &__top{
             height: 50px;
-            background: rgb(71, 69, 69);
+            background:  #ecbd00;
             display: flex;
             justify-content: space-between;
             align-items: center;
