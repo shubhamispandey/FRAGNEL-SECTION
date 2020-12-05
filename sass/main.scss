@@ -624,3 +624,29 @@ body {
         transform: scale(1.1);
     }
 }
+
+@media (max-width:400px){
+    .mcontainer-2 {
+
+        .wrapper {
+            width: 100%;
+        }
+        .slider-activity {
+            width: 100%;
+            background: none;
+
+            .carousel-item {
+                height: 300px;
+
+            }
+
+        }
+
+
+        .social {
+            width: 100%;
+            height: 600px;
+        }
+
+    }
+}
