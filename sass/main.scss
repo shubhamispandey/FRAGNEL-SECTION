@@ -67,7 +67,7 @@
      transition: all 0.3s ease-in-out;
      display: inline-block;
      margin-bottom: 20px;
-     background::#ecbd00;
+     background: #ecbd00;
      width: 100%;
  }
  
@@ -432,7 +432,79 @@ body {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:875px){
+    .mcontainer-1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .slider-activity {
+            width: 53%;
+        }
+
+        .notice {
+            width: 45%;
+            height: 400px;
+        }
+
+    }
+    .mcontainer-2 {
+        width: 100%;
+
+        .wrapper {
+            width: 50%;
+        }
+
+        .alumani {
+            display: none;
+        }
+
+        .slider-activity {
+            display: inline-block;
+            position: relative;
+            @include box-shadow;
+
+            .carousel-item {
+                background: rgb(0, 0, 0);
+                position: relative;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                &__descr {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #fff;
+
+                }
+            }
+
+            img {
+                opacity: 0.6;
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%
+            }
+
+        }
+
+
+        .social {
+            width: 49%;
+            height: 465px;
+        }
+
+    }
+    .primary-head{
+        font-size: 38px;
+    }
+}
+
+@media (max-width:680px){
     .mcontainer-1 {
         width: 100%;
         display: inline-block;
@@ -477,7 +549,8 @@ body {
         display: inline-block;
 
         .wrapper {
-            width: 100%;
+            width: 90%;
+            margin: auto;
             .header{
                 display: flex;
                 justify-content: center;
@@ -507,7 +580,7 @@ body {
 
                 &__descr {
                     position: absolute;
-                    top: 50%;
+                    top: 70%;
                     left: 50%;
                     transform: translateX(-50%);
                     color: #fff;

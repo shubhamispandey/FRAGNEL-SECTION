@@ -294,7 +294,54 @@ body {
   .mcontainer-2 .social {
     width: 38%; } }
 
-@media (max-width: 500px) {
+@media (max-width: 875px) {
+  .mcontainer-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .mcontainer-1 .slider-activity {
+      width: 53%; }
+    .mcontainer-1 .notice {
+      width: 45%;
+      height: 400px; }
+  .mcontainer-2 {
+    width: 100%; }
+    .mcontainer-2 .wrapper {
+      width: 50%; }
+    .mcontainer-2 .alumani {
+      display: none; }
+    .mcontainer-2 .slider-activity {
+      display: inline-block;
+      position: relative;
+      -webkit-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 10px 27px -2px rgba(0, 0, 0, 0.75); }
+      .mcontainer-2 .slider-activity .carousel-item {
+        background: black;
+        position: relative;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; }
+        .mcontainer-2 .slider-activity .carousel-item__descr {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: #fff; }
+      .mcontainer-2 .slider-activity img {
+        opacity: 0.6;
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%; }
+    .mcontainer-2 .social {
+      width: 49%;
+      height: 465px; }
+  .primary-head {
+    font-size: 38px; } }
+
+@media (max-width: 680px) {
   .mcontainer-1 {
     width: 100%;
     display: inline-block; }
@@ -323,7 +370,8 @@ body {
     width: 100%;
     display: inline-block; }
     .mcontainer-2 .wrapper {
-      width: 100%; }
+      width: 90%;
+      margin: auto; }
       .mcontainer-2 .wrapper .header {
         display: flex;
         justify-content: center;
@@ -348,7 +396,7 @@ body {
         overflow: hidden; }
         .mcontainer-2 .slider-activity .carousel-item__descr {
           position: absolute;
-          top: 50%;
+          top: 70%;
           left: 50%;
           transform: translateX(-50%);
           color: #fff; }
