@@ -275,6 +275,10 @@ body {
         }
     }
 
+    .alumani-slider{
+        display: none;
+    }
+
     .social{
         width: 35%;
         height: 600px;
@@ -483,6 +487,7 @@ body {
         }
 
         .alumani{
+            display: none;
             &__text{
                 padding: 10px;
                 top: 80%;
@@ -494,6 +499,10 @@ body {
                     display: none;
                 }
             }
+        }
+
+        .alumani-slider {
+            display: inline-block;
         }
 
         .social {
