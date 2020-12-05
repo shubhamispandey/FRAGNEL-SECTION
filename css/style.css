@@ -103,7 +103,7 @@ body {
       top: 6%; }
       .mcontainer-1 .notice-text ul {
         list-style: none;
-        color: #450fc2;
+        color: #0388fc;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         padding: 35px; }
@@ -409,6 +409,8 @@ body {
       width: 90%;
       margin: auto;
       margin-top: 10px; }
+      .mcontainer-2 .social .posts {
+        overflow: hidden; }
   .primary-head {
     font-size: 36px; }
   .secondary-head {
@@ -438,4 +440,5 @@ body {
       height: 300px; }
   .mcontainer-2 .social {
     width: 100%;
-    height: 600px; } }
+    height: 600px;
+    padding: 20px; } }
